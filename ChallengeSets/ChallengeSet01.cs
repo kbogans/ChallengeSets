@@ -20,20 +20,27 @@ namespace ChallengeSets
 
         public int GetSmallestNumber(int number1, int number2)
         {
-             return Math.Min(number1, number2); 
-            
+            return Math.Min(number1, number2);
+
         }
 
         public long Multiply(long factor1, long factor2)
         {
-            throw new NotImplementedException();
+            return factor1 * factor2;
         }
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(nameOfPerson))
+            {
+                return "Hello!";
+            }
+            else
+            {
+                return $"Hello, {nameOfPerson}!";
+            //throw new NotImplementedException();
         }
-
+}
         public string GetHey()
         {
             return "HEY!";
