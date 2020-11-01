@@ -102,7 +102,21 @@ namespace ChallengeSets
 
         public int SumEvens(int[] numbers)
         {
-            throw new NotImplementedException();
+            if (numbers == null)
+            {
+                return 0;
+            }
+            else
+            {
+                int sumOfEvens = 0;
+                foreach (int item in numbers)
+                {
+                    if(item % 2 == 0)
+                    sumOfEvens += item;
+                }
+                return sumOfEvens;
+            }
+            //throw new NotImplementedException();
         }
 
         public bool IsSumOdd(List<int> numbers)
