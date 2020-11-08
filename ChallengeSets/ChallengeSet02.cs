@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 
 namespace ChallengeSets
 {
@@ -22,7 +23,7 @@ namespace ChallengeSets
 
         public bool CountOfElementsIsEven(string[] vals)
         {
-            if(vals.Length % 2 == 0)
+            if (vals.Length % 2 == 0)
             {
                 return true;
             }
@@ -35,7 +36,7 @@ namespace ChallengeSets
 
         public bool IsNumberEven(int number)
         {
-            if(number % 2 == 0)
+            if (number % 2 == 0)
             {
                 return true;
             }
@@ -43,7 +44,7 @@ namespace ChallengeSets
             {
                 return false;
             }
-            
+
             //throw new NotImplementedException();
         }
 
@@ -63,14 +64,14 @@ namespace ChallengeSets
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-         
+
 
             throw new NotImplementedException();
         }
 
         public int GetLengthOfShortestString(string str1, string str2)
         {
-            if(str1.Length < str2.Length)
+            if (str1.Length < str2.Length)
             {
                 return str1.Length;
             }
@@ -96,7 +97,7 @@ namespace ChallengeSets
                 }
                 return sum;
             }
-            
+
             //throw new NotImplementedException();
         }
 
@@ -111,8 +112,8 @@ namespace ChallengeSets
                 int sumOfEvens = 0;
                 foreach (int item in numbers)
                 {
-                    if(item % 2 == 0)
-                    sumOfEvens += item;
+                    if (item % 2 == 0)
+                        sumOfEvens += item;
                 }
                 return sumOfEvens;
             }
@@ -121,12 +122,24 @@ namespace ChallengeSets
 
         public bool IsSumOdd(List<int> numbers)
         {
+            if (numbers == null)
+            {
+                return false;
+ 
+            
+            }
+            return (numbers.Sum() % 2 != 0);
+
+                    
+        }
+   
+      
+        public long CountOfPositiveOddsBelowNumber(long number)
+        {
+            
             throw new NotImplementedException();
         }
 
-        public long CountOfPositiveOddsBelowNumber(long number)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
+
