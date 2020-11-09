@@ -64,9 +64,21 @@ namespace ChallengeSets
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-
-
-            throw new NotImplementedException();
+            if (numbers == null)
+            {
+                return 0;
+            }
+            double min = double.MaxValue;
+            double max = double.MinValue;
+            double sum = 0;
+            foreach (double i in numbers)
+            {
+                //Console.WriteLine(i);
+                min = Math.Min(min, i);
+                max = Math.Max(max, i);
+                sum += i;
+            }
+            return max + min;
         }
 
         public int GetLengthOfShortestString(string str1, string str2)
