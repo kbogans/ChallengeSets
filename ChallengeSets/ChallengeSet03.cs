@@ -25,6 +25,7 @@ namespace ChallengeSets
 
         public char GetFirstLetterOfString(string val)
         {
+            return val[0];
             throw new NotImplementedException();
         }
 
