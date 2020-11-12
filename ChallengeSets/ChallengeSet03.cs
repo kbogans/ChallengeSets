@@ -31,8 +31,9 @@ namespace ChallengeSets
 
         public char GetLastLetterOfString(string val)
         {
-
-            throw new NotImplementedException();
+            var lastLetter  = val[val.Length - 1];
+            return lastLetter;
+            //throw new NotImplementedException();
         }
 
         public decimal Divide(decimal dividend, decimal divisor)
