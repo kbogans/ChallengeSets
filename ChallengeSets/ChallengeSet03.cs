@@ -29,6 +29,7 @@ namespace ChallengeSets
             throw new NotImplementedException();
         }
 
+
         public char GetLastLetterOfString(string val)
         {
             var lastLetter  = val[val.Length - 1];
@@ -43,7 +44,9 @@ namespace ChallengeSets
 
         public int LastMinusFirst(int[] nums)
         {
-            throw new NotImplementedException();
+            var number = nums[nums.Length - 1] - nums[0];
+            return number;
+            //throw new NotImplementedException();
         }
         public int[] GetOddsBelow100()
         {
