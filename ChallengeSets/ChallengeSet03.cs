@@ -39,6 +39,12 @@ namespace ChallengeSets
 
         public decimal Divide(decimal dividend, decimal divisor)
         {
+            if(divisor == 0)
+            {
+                return 0;
+            }
+            var dec = dividend / divisor;
+            return dec;
             throw new NotImplementedException();
         }
 
