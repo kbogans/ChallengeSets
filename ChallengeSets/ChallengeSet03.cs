@@ -21,7 +21,7 @@ namespace ChallengeSets
         {
             return password.Any(char.IsUpper) && password.Any(char.IsLower) && password.Any(char.IsNumber);
         }
-        
+
 
         public char GetFirstLetterOfString(string val)
         {
@@ -32,7 +32,7 @@ namespace ChallengeSets
 
         public char GetLastLetterOfString(string val)
         {
-            var lastLetter  = val[val.Length - 1];
+            var lastLetter = val[val.Length - 1];
             return lastLetter;
             //throw new NotImplementedException();
         }
@@ -50,12 +50,22 @@ namespace ChallengeSets
         }
         public int[] GetOddsBelow100()
         {
+            var odd = Enumerable.Range(1, 100).Where(i => i % 2 == 0);
+
             throw new NotImplementedException();
         }
 
+
+
         public void ChangeAllElementsToUppercase(string[] words)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < words.Length; i++)
+            {
+                words[i] = words[i].ToUpper();
+            }
+            //throw new NotImplementedException();
         }
     }
 }
+    
+
