@@ -15,11 +15,11 @@ namespace ChallengeSets
 
         public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
         {
-            //if(numbers == null)
-            //{
-              //  return false;
-            //}
-            //return (numbers.Sum() % 2 != 0);
+            if(numbers == null)
+            {
+               return false;
+            }
+            return (numbers.Sum() % 2 != 0);
             
             throw new NotImplementedException();
         }
