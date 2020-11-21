@@ -9,11 +9,18 @@ namespace ChallengeSets
     {
         public bool ArrayContainsAFalse(bool[] vals)
         {
+            return vals.Contains(false);
             throw new NotImplementedException();
         }
 
         public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
         {
+            //if(numbers == null)
+            //{
+              //  return false;
+            //}
+            //return (numbers.Sum() % 2 != 0);
+            
             throw new NotImplementedException();
         }
 
