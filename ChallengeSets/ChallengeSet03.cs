@@ -15,12 +15,12 @@ namespace ChallengeSets
 
         public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
         {
-            if(numbers == null)
+            if (numbers == null)
             {
-               return false;
+                return false;
             }
             return (numbers.Sum() % 2 != 0);
-            
+
             throw new NotImplementedException();
         }
 
@@ -46,7 +46,7 @@ namespace ChallengeSets
 
         public decimal Divide(decimal dividend, decimal divisor)
         {
-            if(divisor == 0)
+            if (divisor == 0)
             {
                 return 0;
             }
@@ -63,9 +63,17 @@ namespace ChallengeSets
         }
         public int[] GetOddsBelow100()
         {
-            var odd = Enumerable.Range(1, 100).Where(i => i % 2 == 0);
 
-            throw new NotImplementedException();
+            List<int> oddsBelow100 = new List<int>();
+            for (int i = 0; i < 100; i++)
+            {
+                if(i % 2 != 0)
+                {
+                    oddsBelow100.Add(i);
+                }
+            }
+            return oddsBelow100.ToArray();
+          
         }
 
 
