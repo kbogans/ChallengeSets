@@ -80,7 +80,31 @@ namespace ChallengeSets
 
         public double AverageEvens(int[] numbers)
         {
-            throw new NotImplementedException();
+            if(numbers == null)
+            {
+                return 0;
+            }
+            else
+            {
+                int evens = 0;
+                int AverageOfEvens = 0;
+                foreach (int item in numbers)
+                {
+                    if(item % 2 == 0)
+                    {
+                        evens += item;
+                        AverageOfEvens++;
+
+                    }
+                }
+                if (AverageOfEvens == 0)
+                {
+                    return 0;
+                }
+                return (double)evens / AverageOfEvens;
+            }
+            
+            //throw new NotImplementedException();
         }
 
         public int Factorial(int number)
