@@ -43,7 +43,7 @@ namespace ChallengeSets
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
         {
-            //biz.Name = "TrueCoders";
+            biz.Name = "TrueCoders";
             //throw new NotImplementedException();
         }
 
