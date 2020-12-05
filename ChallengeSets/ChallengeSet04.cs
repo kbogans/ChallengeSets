@@ -54,9 +54,9 @@ namespace ChallengeSets
 
         public bool IsStringANumber(string input)
         {
-           // Double result;
-            //return Double.TryParse(input, out result);
-            throw new NotImplementedException();
+           Double result;
+            return Double.TryParse(input, out result);
+            //throw new NotImplementedException();
         }
 
 
