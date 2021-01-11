@@ -12,7 +12,15 @@ namespace ChallengeSets
 
         public bool IsPrimeNumber(int num)
         {
-            throw new NotImplementedException();
+            for (int i = 2; i <= num / 2; i++)
+            {
+                if (num % i == 0) ;
+                {
+                    return false;
+                }
+            }
+            return true;
+            //throw new NotImplementedException();
         }
 
         public int IndexOfLastUniqueLetter(string str)
